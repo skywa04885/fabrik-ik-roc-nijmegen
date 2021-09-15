@@ -16,15 +16,12 @@ Vec3::Vec3 (const Vec3 &copy) noexcept:
     m_K (copy.m_K)
 {}
 
-double Vec3::Magnitude (void) const noexcept
-{
-    double squareSum = 0.;
-    
-    squareSum += m_I * m_I;
-    squareSum += m_J * m_J;
-    squareSum += m_K * m_K;
-    
-    return std::sqrt (squareSum);
+double Vec3::DistanceTo (const Vec3 &other) const noexcept {
+    return std::sqrt (
+        std::pow (GetI () - other.GetI (), 2) + 
+        std::pow (GetJ () - other.GetJ (), 2) +
+        std::pow (GetK () - other.GetK (), 2)  
+    );
 }
 
 Vec3 Vec3::Normalize (void) const noexcept
@@ -96,6 +93,18 @@ double Vec3::Dot (const Vec3 &other) const noexcept
 double Vec3::Angle (const Vec3 &other) const noexcept
 {
     return std::acos (this->Dot (other) / (Magnitude () * other.Magnitude ()));
+}
+
+Vec3 Vec3::LERP (const Vec3 &a, const Vec3 &b, double t) noexcept
+{
+    return a + ((b - a) * t);
+}
+
+Vec3 Vec3::SLERP (const Vec3 &a, const Vec3 &b, double t) noexcept
+{
+    const double ANGLE = a.Angle (b);
+    return  (a * (std::sin (1. - t) * ANGLE) / std::sin (ANGLE)) +
+            (b * (std::sin (t * ANGLE) / std::sin (ANGLE)) * b);
 }
 
 std::ostream &operator << (std::ostream &stream, const Vec3 &vec)

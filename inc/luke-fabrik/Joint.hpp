@@ -11,12 +11,8 @@ protected:
     Vec3        m_A,
                 m_B;
 protected:
-    Joint (double length, const Vec3 &a, const Vec3 &b) noexcept:
-        m_Length (length),
-        m_A (a),
-        m_B (b)
-    {}
-
+    Joint (double length, const Vec3 &a, const Vec3 &b) noexcept;
+    
     ~Joint (void) noexcept = default;
 public:
     /// The FABRIK update method, will perform a single joint step in the forward phase.
@@ -53,9 +49,7 @@ class FRJoint : public Joint
 {
 protected:
 public:
-    FRJoint (double length, const Vec3 &a, const Vec3 &b) noexcept:
-        Joint (length, a, b)
-    {}
+    FRJoint (double length, const Vec3 &a, const Vec3 &b) noexcept;
 
     ~FRJoint (void) noexcept = default;
 public:
@@ -90,10 +84,7 @@ class CLJoint : public Joint
 protected:
     double m_MaxAngle;
 public:
-    CLJoint (double length, const Vec3 &a, const Vec3 &b, double maxAngle) noexcept:
-        Joint (length, a, b),
-        m_MaxAngle (maxAngle)
-    {}
+    CLJoint (double length, const Vec3 &a, const Vec3 &b, double maxAngle) noexcept;
 
     ~CLJoint (void) noexcept = default;
 public:
@@ -106,10 +97,20 @@ public:
     /// The FABRIK update method, will perform a single joint step in the forward phase.
     virtual inline void FABRIK_ForwardUpdate (const Vec3 &from)
     {
+        // Calculates the normal of the from.
+        const Vec3 FROM_DIRECTION = from.Normalize ();
+
         // Calculates te direction vector for te line.
         Vec3 directionVector = (m_B - from).Normalize ();
 
         // Limits the direction vector to an cone.
+        const double ANGLE = directionVector.Angle (FROM_DIRECTION);
+        if (ANGLE > m_MaxAngle)
+        {
+            const double ANGLE_DIFFERENCE = m_MaxAngle / ANGLE;
+            const Vec3 CONE_DIRECTION = FROM_DIRECTION * m_Length;
+            directionVector = Vec3::SLERP (CONE_DIRECTION, directionVector, ANGLE_DIFFERENCE);
+        }
 
         // Sets thew new point B to the vector on the given line
         //  and A to the point we're calculating from.

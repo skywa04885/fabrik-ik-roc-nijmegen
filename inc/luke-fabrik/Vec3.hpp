@@ -12,11 +12,23 @@ public:
     static const Vec3 Y;
     static const Vec3 Z;
 public:
+    inline double SquareSum (void) const noexcept
+    {
+        return std::pow (GetI (), 2) + std::pow (GetJ (), 2) + std::pow (GetK (), 2);
+    }
+
+    inline double Magnitude (void) const noexcept
+    {
+        return std::sqrt (SquareSum ());
+    }
+public:
+    Vec3 (void) noexcept = default;
+
     Vec3 (double i, double j, double k) noexcept;
 
     Vec3 (const Vec3 &copy) noexcept;
 
-    double Magnitude (void) const noexcept;
+    double DistanceTo (const Vec3 &other) const noexcept;
 
     Vec3 Normalize (void) const noexcept;
 
@@ -33,6 +45,10 @@ public:
     double Dot (const Vec3 &other) const noexcept;
 
     double Angle (const Vec3 &other) const noexcept;
+
+    static Vec3 LERP (const Vec3 &a, const Vec3 &b, double t) noexcept;
+
+    static Vec3 SLERP (const Vec3 &a, const Vec3 &b, double t) noexcept;
 
     ~Vec3 (void) noexcept = default;
 public:
@@ -51,3 +67,5 @@ public:
         return m_K;
     }
 };
+
+std::ostream &operator << (std::ostream &stream, const Vec3 &vec);

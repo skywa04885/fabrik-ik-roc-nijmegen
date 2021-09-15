@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/run/media/lrieff/Data/Projects/CC/SchoolFABRIK'
+ 
+g++ -I./inc -g -Wall -O3 ./src/luke-fabrik/Quaternion.o ./src/luke-fabrik/FABRIK.o ./src/luke-fabrik/SimpleSkeleton.o ./src/luke-fabrik/Joint.o ./src/luke-fabrik/Vec3.o ./src/main.o -o main.elf
+make: Leaving directory '/run/media/lrieff/Data/Projects/CC/SchoolFABRIK'
+ 

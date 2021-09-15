@@ -2,8 +2,9 @@ GPP 		:= g++
 
 GPP_ARGS	+= -I./inc
 
+GPP_ARGS	+= -g
 GPP_ARGS 	+= -Wall
-GPP_ARGS 	+= -Werror
+# GPP_ARGS 	+= -Werror
 GPP_ARGS 	+= -O3
 
 %.o: %.cpp

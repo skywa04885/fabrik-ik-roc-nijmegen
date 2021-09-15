@@ -1,0 +1,475 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Sep 15 15:04:23 2021
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+STARSHIP_SESSION_KEY = 2868725461452755
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e6d2fc07-222a-4905-b1b3-ec2010e1be34.sock
+# environment
+VSCODE_CWD = /home/lrieff
+# environment
+WINDOWPATH = 2
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 13)
+CPP_SOURCES = $(shell find . -name *.cpp)
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/73/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /run/media/lrieff/Data/Projects/CC/SchoolFABRIK
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = fedora
+# environment
+MAIL = /var/spool/mail/lrieff
+# environment
+XDG_DATA_DIRS = /home/lrieff/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/lrieff/.config/Code/CachedData/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 8)
+GPP_ARGS = -I./inc -g -Wall -O3
+# makefile
+CURDIR := /run/media/lrieff/Data/Projects/CC/SchoolFABRIK
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=de728969-48cc-4770-8ba7-0a13473cfdbc&iid=de728969-48cc-4770-8ba7-0a13473cfdbc&sid=de728969-48cc-4770-8ba7-0a13473cfdbc","uploadToServer":true}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 28634
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2202,unix/unix:/tmp/.ICE-unix/2202
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/lrieff/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = zwHje5f93wU16R-KZJfkUm0gd2aHaefQMlbIE1vsxMEBGRwSRjTD
+# environment
+PATH = /home/lrieff/.local/bin:/home/lrieff/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 1)
+GPP := g++
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/lrieff/snap/code/common
+# environment
+SNAP = /snap/code/73
+# environment
+INVOCATION_ID = d7485d575c4e4850829a6865a5ef8469
+# environment
+SNAP_REVISION = 73
+# environment
+SNAP_REAL_HOME = /home/lrieff
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = lrieff
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+KDEDIRS = /usr
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# makefile (from 'Makefile', line 15)
+OBJECTS = $(CPP_SOURCES:.cpp=.o)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = lrieff
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 2227
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :1
+# environment
+USER = lrieff
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/73
+# environment
+SNAP_CONTEXT = zwHje5f93wU16R-KZJfkUm0gd2aHaefQMlbIE1vsxMEBGRwSRjTD
+# environment
+MANAGERPID = 1923
+# environment
+which_declare = declare -f
+# environment
+STARSHIP_SHELL = bash
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 28558
+# environment
+SSH_AGENT_PID = 1991
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/lrieff/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:37067
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/lrieff
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b42e7250-1.60.0-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/73/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = e7d7e9a9
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+SNAP_USER_DATA = /home/lrieff/snap/code/73
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+ 
+# Load=132/1024=13%, Rehash=0, Collisions=6/186=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src (device 2049, inode 9444358): 4 files, no impossibilities so far.
+# . (device 2049, inode 9313517): 9 files, no impossibilities.
+# src/luke-fabrik (device 2049, inode 9444361): 9 files, no impossibilities so far.
+
+# 22 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+src/luke-fabrik/FABRIK.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 14:55:25.898301184
+#  File has been updated.
+#  Successfully updated.
+
+src/luke-fabrik/Joint.o: src/luke-fabrik/Joint.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/luke-fabrik/Joint'
+#  Last modified 2021-09-15 15:02:04.352887935
+#  File has been updated.
+ 
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 15:04:21.313433331
+#  File has been updated.
+#  Successfully updated.
+
+src/luke-fabrik/FABRIK.o: src/luke-fabrik/FABRIK.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/luke-fabrik/FABRIK'
+#  Last modified 2021-09-15 15:02:03.489884499
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+# Not a target:
+src/main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 15:04:06.748375321
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/luke-fabrik/Quaternion.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 13:53:46.748330794
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	rm -rf $(OBJECTS) main.elf
+
+# Not a target:
+src/luke-fabrik/SimpleSkeleton.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 14:59:53.400366438
+#  File has been updated.
+#  Successfully updated.
+
+src/main.o: src/main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/main'
+#  Last modified 2021-09-15 15:04:19.037424265
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+src/luke-fabrik/Vec3.o: src/luke-fabrik/Vec3.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/luke-fabrik/Vec3'
+#  Last modified 2021-09-15 15:02:04.728889433
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/luke-fabrik/Joint.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 14:28:40.552593822
+#  File has been updated.
+#  Successfully updated.
+
+# 'override' directive
+all: .SHELLSTATUS := 0
+all: src/luke-fabrik/Quaternion.o src/luke-fabrik/FABRIK.o src/luke-fabrik/SimpleSkeleton.o src/luke-fabrik/Joint.o src/luke-fabrik/Vec3.o src/main.o
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := src/luke-fabrik/Quaternion.o
+# automatic
+# + := src/luke-fabrik/Quaternion.o src/luke-fabrik/FABRIK.o src/luke-fabrik/SimpleSkeleton.o src/luke-fabrik/Joint.o src/luke-fabrik/Vec3.o src/main.o
+# automatic
+# % := 
+# automatic
+# ^ := src/luke-fabrik/Quaternion.o src/luke-fabrik/FABRIK.o src/luke-fabrik/SimpleSkeleton.o src/luke-fabrik/Joint.o src/luke-fabrik/Vec3.o src/main.o
+# automatic
+# ? := src/luke-fabrik/Quaternion.o src/luke-fabrik/FABRIK.o src/luke-fabrik/SimpleSkeleton.o src/luke-fabrik/Joint.o src/luke-fabrik/Vec3.o src/main.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=1/19=5%
+#  recipe to execute (from 'Makefile', line 18):
+	$(GPP) $(GPP_ARGS) $(OBJECTS) -o main.elf
+
+src/luke-fabrik/SimpleSkeleton.o: src/luke-fabrik/SimpleSkeleton.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/luke-fabrik/SimpleSkeleton'
+#  Last modified 2021-09-15 15:02:04.013886586
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+src/luke-fabrik/Quaternion.o: src/luke-fabrik/Quaternion.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/luke-fabrik/Quaternion'
+#  Last modified 2021-09-15 15:02:03.040882711
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 11):
+	$(GPP) $(GPP_ARGS) -c $< -o $@
+
+# Not a target:
+src/luke-fabrik/Vec3.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-15 14:41:45.174886466
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=0/53=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 47 / storage = 693 B / avg = 14 B
+# current buf: size = 8162 B / used = 693 B / count = 47 / avg = 14 B
+
+# strcache performance: lookups = 64 / hit rate = 26%
+# hash-table stats:
+# Load=47/8192=1%, Rehash=0, Collisions=0/64=0%
+# Finished Make data base on Wed Sep 15 15:04:23 2021
+
+ 
